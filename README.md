@@ -4,11 +4,11 @@ título
 
 ## Análises realizadas
 
-1. Prevalências de disfonia e disfagia ([Planejamento][proj-xxx])
-2. Associação de disfonia e disfagia com fatores de interesse ([Planejamento][proj-yyy])
+1. Prevalências de disfonia e disfagia ([Planejamento][proj-prev])
+2. Associação de disfonia e disfagia com fatores de interesse ([Planejamento][proj-or])
 
-[proj-xxx]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/xxx
-[proj-yyy]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/yyy
+[proj-prev]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/q
+[proj-or]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/2
 
 ## Relatório da análise de dados
 
