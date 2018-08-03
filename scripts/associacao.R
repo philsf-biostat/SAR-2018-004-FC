@@ -1,16 +1,16 @@
 source("scripts/input.R", encoding = 'UTF-8')
 
-# DISFONIA ####
+# POS_DISFONIA ####
 # tabelas
-ob.disfon <- with(DF, table(OBESO, DISFONIA))
-cir.disfon <- with(DF, table(LONGA, DISFONIA))
-corpec.disfon <- with(DF, table(CORPECTOMIAS, DISFONIA))
-mielo.disfon <- with(DF, table(MIELOPATIA, DISFONIA))
-frat.disfon <- with(DF, table(`FRATURA / SEQUELA`, DISFONIA))
-gen.disfon <- with(DF, table(GENERO, DISFONIA))
-niveis.disfon <- with(DF, table(NIVEIS, DISFONIA))
-placa.disfon <- with(DF, table(PLACA, DISFONIA))
-cervic.disfon <- with(DF, table(`CERVICAL ALTA`, DISFONIA))
+ob.disfon <- with(DF, table(OBESO, POS_DISFONIA))
+cir.disfon <- with(DF, table(LONGA, POS_DISFONIA))
+corpec.disfon <- with(DF, table(CORPECTOMIAS, POS_DISFONIA))
+mielo.disfon <- with(DF, table(MIELOPATIA, POS_DISFONIA))
+frat.disfon <- with(DF, table(`FRATURA / SEQUELA`, POS_DISFONIA))
+gen.disfon <- with(DF, table(GENERO, POS_DISFONIA))
+niveis.disfon <- with(DF, table(NIVEIS, POS_DISFONIA))
+placa.disfon <- with(DF, table(PLACA, POS_DISFONIA))
+cervic.disfon <- with(DF, table(`CERVICAL ALTA`, POS_DISFONIA))
 
 # DISFAGIA ####
 # tabelas
