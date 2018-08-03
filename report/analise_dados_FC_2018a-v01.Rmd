@@ -109,6 +109,8 @@ round(prop.test(prev.disfag, N)$conf.int*100, 1) # DISFAGIA
 round(prop.test(prev.disfon, N)$conf.int*100, 1) # DISFONIA
 ```
 
+No total, N=`r N` pacientes retornaram para a avaliação de disfagia e disfonia no pós operatório tardio.
+
 A disfagia foi diagnosticada em
 `r N.disfag`
 pacientes com taxa de prevalência estimada em
