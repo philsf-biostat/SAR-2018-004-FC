@@ -117,11 +117,6 @@ Nenhum paciente apresentou disfonia sem apresentar disfagia.
 # pander(tabela.disfagia)
 ```
 
-Na estratificação por disfagia, não foi observada diferença significativa na idade (p = 0.188), IMC (p = 0.446) e no tempo de cirurgia em minutos (p = 0.544).
-A idade média (DP) dos pacientes que apresentaram disfagia foi 57.14 (7.98) anos e dos pacientes que não apresentaram foi 53.27 (9.74) anos.
-O IMC médio (DP) nos pacientes disfágicos foi 27.79 (3.91) kg/m2 e nos pacientes não disfágicos 29.05 (6.18) kg/m2.
-A duração média (DP) da cirurgia dos pacientes diagnosticados com disfagia foi 189.58 (72.99) minutos, enquanto os pacientes que não apresentaram foi 174.55 (65.44) minutos.
-
 Não observamos neste estudo evidências de associação entre disfagia e
 gênero (`r format.or(gen.disfag) `),
 obesidade (`r format.or(ob.disfag)`),
@@ -139,14 +134,6 @@ quantidade de níveis na cirurgia (`r format.or(niveis.disfag)`).
 ```{r disfonia, echo = F}
 # pander(tabela.disfonia)
 ```
-
-No grupo de pacientes que desenvolveram disfonia, a idade média (DP) observada foi 59.36 (7.54) anos enquanto nos pacientes que não apresentaram esta condição a idade média (DP) foi 55.28 (8.61) anos.
-Não há diferença significativa entre as idades dos grupos (p = 0.164).
-
-O IMC também não evidencia diferença significativa entre os grupos (p = 0.262), tendo idade média (DP) de 26.68 (4.11) kg/m2 para os pacientes com disfonia e 28.53 (4.58) kg/m2 para os pacientes sem disfonia.
-
-O tempo de cirurgia foi significativamente diferente entre os grupos (p = 0.018), sendo que o grupo que apresentou disfonia teve procedimentos com uma média (DP) de 229.55 (48.76) minutos, enquanto o grupo onde não foi observada a disfonia teve média (DP) de 172.78 (71.77) minutos.
-Isto indica que, em nossa amostra, o tempo médio de cirurgia foi maior no grupo que foi diagnosticado com disfonia, em relação aos que tiveram este diagnóstico rejeitado.
 
 Observamos uma associação estatisticamente significativa entre cirurgias grandes e a prevalência de disfonia (`r format.or(niveis.disfon)`).
 Esta taxa indica um aumento de seis vezes na prevalência deste desfecho no período estudado.
