@@ -101,8 +101,10 @@ Todas as outras informações estavam completos (N=47).
 ## Prevalência da disfagia e disfonia
 
 ```{r, include = F}
-prev.disfon <- sum(DF_pos$POS_DISFONIA)
-prev.disfag <- sum(DF_pos$POS_DISFAGIA)
+N.disfon <- sum(DF_pos$POS_DISFONIA)
+N.disfag <- sum(DF_pos$POS_DISFAGIA)
+prev.disfon <- N.disfon/N
+prev.disfag <- N.disfag/N
 round(prop.test(prev.disfag, N)$conf.int*100, 1) # DISFAGIA
 round(prop.test(prev.disfon, N)$conf.int*100, 1) # DISFONIA
 ```
