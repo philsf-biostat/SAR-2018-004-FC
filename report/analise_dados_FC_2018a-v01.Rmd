@@ -87,6 +87,71 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 # Resultados
 
+```{r associacao, echo = FALSE}
+source("scripts/associacao.R", encoding = 'UTF-8')
+source("scripts/tabela1.R", encoding = 'UTF-8')
+```
+
+Os 47 pacientes observados possuem idades entre 41 e 77 anos, IMC entre 20.8 e 44.8 kg/m2, e o tempo da cirurgia variando entre 1 hora e 15 minutos e 5 horas e 30 minutos.
+Estas variáveis foram estratificados de acordo com os desfechos de disfagia e disfonia.
+Dos 47 pacientes da amostra, 5 não tiveram informações disponíveis de altura e/ou peso necessárias para o cálculo do IMC, portanto este dado foi calculado com os 42 pacientes em que estes dados estavam disponíveis.
+Todas as outras informações estavam completos (N=47).
+
+## Prevalência da disfagia e disfonia
+
+```{r, include = F}
+round(prop.test(36, 47)$conf.int*100, 1) # DISFAGIA
+round(prop.test(11,47)$conf.int*100, 1) # DISFONIA
+```
+
+A disfagia foi diagnosticada em 36 pacientes com taxa de prevalência estimada em 76.6% (IC 95%: [61.6%, 87.2%]) no período estudado.
+A disfonia foi diagnosticada em 11 pacientes, com taxa de prevalência estimada em 23.4% (IC 95%: [12.8%, 38.4%]) no período estudado.
+
+Dentre os 47 pacientes, 11 (23.4%) tiveram diagnóstico negativo para ambas condições e 11 (23.4%) tiveram diagnóstico positivo para ambas condições.
+Houve 25 (53.2%) pacientes diagnosticados com disfagia, mas que não apresentaram disfonia.
+Nenhum paciente apresentou disfonia sem apresentar disfagia.
+
+## Disfagia
+
+```{r disfagia, echo = F}
+# pander(tabela.disfagia)
+```
+
+Não observamos neste estudo evidências de associação entre disfagia e
+gênero (`r format.or(gen.disfag) `),
+obesidade (`r format.or(ob.disfag)`),
+presença de fraturas ou sequelas (`r format.or(frat.disfag)`),
+presença de mielopatia (`r format.or(mielo.disfag)`),
+o uso de placas (`r format.or(placa.disfag)`),
+presença de corpectomias (`r format.or(corpec.disfag)`)
+ou
+se o procedimento foi executado na região alta da cervical (`r format.or(cervic.disfag)`),
+pacientes submetidos a cirurgias longas (`r format.or(cir.disfag)`) ou
+quantidade de níveis na cirurgia (`r format.or(niveis.disfag)`).
+
+## Disfonia
+
+```{r disfonia, echo = F}
+# pander(tabela.disfonia)
+```
+
+Observamos uma associação estatisticamente significativa entre cirurgias grandes e a prevalência de disfonia (`r format.or(niveis.disfon)`).
+Esta taxa indica um aumento de seis vezes na prevalência deste desfecho no período estudado.
+
+Também parece haver um aumento significativo da prevalência de disfonia em pacientes submetidos a cirurgias longas (`r format.or(cir.disfon)`).
+Esta evidência porém é fraca devido à pequena quantidade de pacientes disponíveis.
+Apenas um paciente apresentou disfonia com cirurgia curta, portanto não há poder estatístico para avaliar decisivamente a associação entre o tempo de cirurgia e a ocorrência da disfagia.
+
+Não observamos neste estudo evidências de associação entre disfonia e
+gênero (`r format.or(gen.disfon) `),
+obesidade (`r format.or(ob.disfon)`),
+presença de fraturas ou sequelas (`r format.or(frat.disfon)`),
+presença de mielopatia (`r format.or(mielo.disfon)`),
+o uso de placas (`r format.or(placa.disfon)`),
+presença de corpectomias (`r format.or(corpec.disfon)`)
+ou
+se o procedimento foi executado na região alta da cervical (`r format.or(cervic.disfon)`).
+
 <!-- # Exceções e Desvios do teste -->
 
 # Conclusões

@@ -1,3 +1,5 @@
+source("scripts/input.R", encoding = 'UTF-8')
+
 # DISFONIA ####
 # tabelas
 ob.disfon <- with(DF, table(OBESO, DISFONIA))
