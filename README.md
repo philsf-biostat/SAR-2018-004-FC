@@ -38,7 +38,7 @@ Esta versão da análise será um relatório completo.
 [docx-v01]: report/analise_dados_FC_2018a-v01.docx?raw=true
 [v01-project]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/3
 
-[milestone-posqual]: https://github.com/philsf-biostat/xxx/milestone/4
+[milestone-posqual]: https://github.com/philsf-biostat/analise_dados_FC_2018a/milestone/4
 [reportviz-v02]: report/analise_dados_FC_2018a-v02.md
 [docx-v02]: report/analise_dados_FC_2018a-v02.docx?raw=true
 [v02-project]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/4
