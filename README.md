@@ -14,19 +14,23 @@ título
 
 [Ver as etapas desta análise][releases].
 
-**Versão 01 - Resultados brutos pós operatório tardio** - [Em elaboração][milestone-prequal].
+**Versão 01 - Resultados brutos pós operatório tardio** - [Concluído em 2018-08-02][milestone-prequal].
+
+Esta versão da análise contém apenas os dados brutos, na mesma ordem e estrutura do artigo submetido em 2017.
 
 [Planejamento][v01-project].
 
 - [Visualização online][reportviz-v01]
 - [Download][docx-v01]
 
-<!-- **Versão 02 - Defesa** - [Em elaboração][milestone-posqual]. -->
+**Versão 02 - Defesa** - [Em elaboração][milestone-posqual].
 
-<!-- [Planejamento][v02-project]. -->
+Esta versão da análise será um relatório completo.
 
-<!-- - [Visualização online][reportviz-v02] -->
-<!-- - Download -->
+[Planejamento][v02-project].
+
+- [Visualização online][reportviz-v02]
+- Download
 
 [releases]: https://github.com/philsf-biostat/analise_dados_FC_2018a/releases/
 [milestone-prequal]: https://github.com/philsf-biostat/analise_dados_FC_2018a/milestone/2
@@ -34,7 +38,7 @@ título
 [docx-v01]: report/analise_dados_FC_2018a-v01.docx?raw=true
 [v01-project]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/3
 
-<!-- [milestone-posqual]: https://github.com/philsf-biostat/xxx/milestone/xxx -->
-<!-- [reportviz-v02]: report/xxx-v02.md -->
-<!-- [docx-v02]: report/xxx-v02.docx?raw=true -->
-<!-- [v02-project]: https://github.com/philsf-biostat/xxx/projects/xxx -->
+[milestone-posqual]: https://github.com/philsf-biostat/xxx/milestone/4
+[reportviz-v02]: report/analise_dados_FC_2018a-v02.md
+[docx-v02]: report/analise_dados_FC_2018a-v02.docx?raw=true
+[v02-project]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/4
