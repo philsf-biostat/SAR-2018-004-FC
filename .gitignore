@@ -281,3 +281,4 @@ flycheck_*.el
 # .html files (Rmarkdown report visualization)
 *.html
 
+/dataset/
