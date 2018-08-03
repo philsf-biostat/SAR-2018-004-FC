@@ -49,3 +49,4 @@ pos_tardio$PRONTUÁRIO <- factor(pos_tardio$PRONTUÁRIO)
 names(pos_tardio) <- c("PRONTUÁRIO", "POS_DISFONIA", "POS_DISFAGIA")
 
 DF_pos <- pos_tardio[DF, , on = .(PRONTUÁRIO)]
+DF_pos <- DF_pos[!is.na(POS_DISFONIA) & !is.na(POS_DISFAGIA)]
