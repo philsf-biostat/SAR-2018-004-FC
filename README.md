@@ -4,8 +4,8 @@ título
 
 ## Análises realizadas
 
-1. Prevalências de disfonia e disfagia ([Planejamento][proj-prev])
-2. Associação de disfonia e disfagia com fatores de interesse ([Planejamento][proj-or])
+1. Prevalências de disfonia e disfagia no pós-operatório tardio ([Planejamento][proj-prev])
+2. Associação de disfonia e disfagia com fatores de interesse no pós-operatório tardio ([Planejamento][proj-or])
 
 [proj-prev]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/1
 [proj-or]: https://github.com/philsf-biostat/analise_dados_FC_2018a/projects/2
