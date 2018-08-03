@@ -148,7 +148,7 @@ Os pacientes que apresentaram disfonia sem apresentar disfagia foram
 # pander(tabela.disfagia)
 ```
 
-Não observamos neste estudo evidências de associação entre disfagia e
+Não observamos no exame pós-operatório tardio evidências de associação entre disfagia e
 gênero (`r format.or(gen.disfag) `),
 obesidade (`r format.or(ob.disfag)`),
 presença de fraturas ou sequelas (`r format.or(frat.disfag)`),
@@ -166,14 +166,7 @@ quantidade de níveis na cirurgia (`r format.or(niveis.disfag)`).
 # pander(tabela.disfonia)
 ```
 
-Observamos uma associação estatisticamente significativa entre cirurgias grandes e a prevalência de disfonia (`r format.or(niveis.disfon)`).
-Esta taxa indica um aumento de seis vezes na prevalência deste desfecho no período estudado.
-
-Também parece haver um aumento significativo da prevalência de disfonia em pacientes submetidos a cirurgias longas (`r format.or(cir.disfon)`).
-Esta evidência porém é fraca devido à pequena quantidade de pacientes disponíveis.
-Apenas um paciente apresentou disfonia com cirurgia curta, portanto não há poder estatístico para avaliar decisivamente a associação entre o tempo de cirurgia e a ocorrência da disfagia.
-
-Não observamos neste estudo evidências de associação entre disfonia e
+Não observamos no exame pós-operatório tardio evidências de associação entre disfonia e
 gênero (`r format.or(gen.disfon) `),
 obesidade (`r format.or(ob.disfon)`),
 presença de fraturas ou sequelas (`r format.or(frat.disfon)`),
@@ -181,7 +174,9 @@ presença de mielopatia (`r format.or(mielo.disfon)`),
 o uso de placas (`r format.or(placa.disfon)`),
 presença de corpectomias (`r format.or(corpec.disfon)`)
 ou
-se o procedimento foi executado na região alta da cervical (`r format.or(cervic.disfon)`).
+se o procedimento foi executado na região alta da cervical (`r format.or(cervic.disfon)`),
+pacientes submetidos a cirurgias longas (`r format.or(cir.disfon)`) ou
+quantidade de níveis na cirurgia (`r format.or(niveis.disfon)`).
 
 <!-- # Exceções e Desvios do teste -->
 
