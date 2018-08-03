@@ -1,7 +1,7 @@
 ---
-title: "Análise Estatística de ..."
-author: '**De:** Felipe Figueiredo **Para:** ___'
-date: '**Data: ** dd/mm/aaaa'
+title: "Prevalência de disfagia e disfonia no pós-operatório tardio de Artrodese Cervical Anterior"
+author: '**De:** Felipe Figueiredo **Para:** Felipe Carrasco'
+date: '**Data: ** 02/08/2018'
 output:
   html_document:
     fig_caption: yes
