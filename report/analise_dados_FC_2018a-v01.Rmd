@@ -109,8 +109,20 @@ round(prop.test(prev.disfag, N)$conf.int*100, 1) # DISFAGIA
 round(prop.test(prev.disfon, N)$conf.int*100, 1) # DISFONIA
 ```
 
-A disfagia foi diagnosticada em 36 pacientes com taxa de prevalência estimada em 76.6% (IC 95%: [61.6%, 87.2%]) no período estudado.
-A disfonia foi diagnosticada em 11 pacientes, com taxa de prevalência estimada em 23.4% (IC 95%: [12.8%, 38.4%]) no período estudado.
+A disfagia foi diagnosticada em
+`r N.disfag`
+pacientes com taxa de prevalência estimada em
+`r format.pct(prev.disfag)`
+(IC 95%:
+`r format.interval(prop.test(N.disfag, N)$conf.int*100, 1)`
+) no período estudado.
+A disfonia foi diagnosticada em
+`r N.disfon`
+pacientes, com taxa de prevalência estimada em
+`r format.pct(prev.disfon)`
+(IC 95%:
+`r format.interval(prop.test(N.disfon, N)$conf.int*100, 1)`
+) no período estudado.
 
 Dentre os 47 pacientes, 11 (23.4%) tiveram diagnóstico negativo para ambas condições e 11 (23.4%) tiveram diagnóstico positivo para ambas condições.
 Houve 25 (53.2%) pacientes diagnosticados com disfagia, mas que não apresentaram disfonia.
