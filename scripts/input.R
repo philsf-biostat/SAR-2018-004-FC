@@ -41,3 +41,12 @@ DF$DUR.cat <- DF[, .( factor(hour(`DURAÇÃO CIR`)))]
 LONGA <- cut(hour(DF$`DURAÇÃO CIR`), breaks = c(0,2, Inf), labels = c(0, 1))
 levels(DF$NIVEIS) <-  c("Até 2", "Até 2", "3 ou mais", "3 ou mais")
 levels(DF$CORPECTOMIAS) <- c(0, 1, 1)
+
+pos_tardio <- read_excel("dataset/Tabela Dados SEGUNDA ETAPA PARA FELIPE.xlsx",
+                         sheet = "Pos Tardio", skip = 1)
+pos_tardio <- data.table(pos_tardio[, c(3,5:6)])
+pos_tardio$PRONTUÁRIO <- factor(pos_tardio$PRONTUÁRIO)
+names(pos_tardio) <- c("PRONTUÁRIO", "POS_DISFONIA", "POS_DISFAGIA")
+
+DF_pos <- pos_tardio[DF, , on = .(PRONTUÁRIO)]
+DF_pos <- DF_pos[!is.na(POS_DISFONIA) & !is.na(POS_DISFAGIA)]
