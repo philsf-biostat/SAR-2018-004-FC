@@ -2,27 +2,27 @@ source("scripts/input.R", encoding = 'UTF-8')
 
 # POS_DISFONIA ####
 # tabelas
-ob.disfon <- with(DF, table(OBESO, POS_DISFONIA))
-cir.disfon <- with(DF, table(LONGA, POS_DISFONIA))
-corpec.disfon <- with(DF, table(CORPECTOMIAS, POS_DISFONIA))
-mielo.disfon <- with(DF, table(MIELOPATIA, POS_DISFONIA))
-frat.disfon <- with(DF, table(`FRATURA / SEQUELA`, POS_DISFONIA))
-gen.disfon <- with(DF, table(GENERO, POS_DISFONIA))
-niveis.disfon <- with(DF, table(NIVEIS, POS_DISFONIA))
-placa.disfon <- with(DF, table(PLACA, POS_DISFONIA))
-cervic.disfon <- with(DF, table(`CERVICAL ALTA`, POS_DISFONIA))
+ob.disfon <- with(DF_pos, table(OBESO, POS_DISFONIA))
+cir.disfon <- with(DF_pos, table(LONGA, POS_DISFONIA))
+corpec.disfon <- with(DF_pos, table(CORPECTOMIAS, POS_DISFONIA))
+mielo.disfon <- with(DF_pos, table(MIELOPATIA, POS_DISFONIA))
+frat.disfon <- with(DF_pos, table(`FRATURA / SEQUELA`, POS_DISFONIA))
+gen.disfon <- with(DF_pos, table(GENERO, POS_DISFONIA))
+niveis.disfon <- with(DF_pos, table(NIVEIS, POS_DISFONIA))
+placa.disfon <- with(DF_pos, table(PLACA, POS_DISFONIA))
+cervic.disfon <- with(DF_pos, table(`CERVICAL ALTA`, POS_DISFONIA))
 
 # DISFAGIA ####
 # tabelas
-ob.disfag <- with(DF, table(OBESO, DISFAGIA))
-cir.disfag <- with(DF, table(LONGA, DISFAGIA))
-corpec.disfag <- with(DF, table(CORPECTOMIAS, DISFAGIA))
-mielo.disfag <- with(DF, table(MIELOPATIA, DISFAGIA))
-frat.disfag <- with(DF, table(`FRATURA / SEQUELA`, DISFAGIA))
-gen.disfag <- with(DF, table(GENERO, DISFAGIA))
-niveis.disfag <- with(DF, table(NIVEIS, DISFAGIA))
-placa.disfag <- with(DF, table(PLACA, DISFAGIA))
-cervic.disfag <- with(DF, table(`CERVICAL ALTA`, DISFAGIA))
+ob.disfag <- with(DF_pos, table(OBESO, DISFAGIA))
+cir.disfag <- with(DF_pos, table(LONGA, DISFAGIA))
+corpec.disfag <- with(DF_pos, table(CORPECTOMIAS, DISFAGIA))
+mielo.disfag <- with(DF_pos, table(MIELOPATIA, DISFAGIA))
+frat.disfag <- with(DF_pos, table(`FRATURA / SEQUELA`, DISFAGIA))
+gen.disfag <- with(DF_pos, table(GENERO, DISFAGIA))
+niveis.disfag <- with(DF_pos, table(NIVEIS, DISFAGIA))
+placa.disfag <- with(DF_pos, table(PLACA, DISFAGIA))
+cervic.disfag <- with(DF_pos, table(`CERVICAL ALTA`, DISFAGIA))
 
 # Função
 format.or <- function(ctable) {
