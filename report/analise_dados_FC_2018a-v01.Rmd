@@ -90,6 +90,7 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 ```{r associacao, echo = FALSE}
 source("scripts/associacao.R", encoding = 'UTF-8')
 source("scripts/tabela1.R", encoding = 'UTF-8')
+N <- nrow(DF_pos)
 ```
 
 Os 47 pacientes observados possuem idades entre 41 e 77 anos, IMC entre 20.8 e 44.8 kg/m2, e o tempo da cirurgia variando entre 1 hora e 15 minutos e 5 horas e 30 minutos.
@@ -100,8 +101,10 @@ Todas as outras informações estavam completos (N=47).
 ## Prevalência da disfagia e disfonia
 
 ```{r, include = F}
-round(prop.test(36, 47)$conf.int*100, 1) # DISFAGIA
-round(prop.test(11,47)$conf.int*100, 1) # DISFONIA
+prev.disfon <- sum(DF_pos$POS_DISFONIA)
+prev.disfag <- sum(DF_pos$POS_DISFAGIA)
+round(prop.test(prev.disfag, N)$conf.int*100, 1) # DISFAGIA
+round(prop.test(prev.disfon, N)$conf.int*100, 1) # DISFONIA
 ```
 
 A disfagia foi diagnosticada em 36 pacientes com taxa de prevalência estimada em 76.6% (IC 95%: [61.6%, 87.2%]) no período estudado.
