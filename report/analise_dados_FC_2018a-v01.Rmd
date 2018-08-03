@@ -90,6 +90,7 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 ```{r associacao, echo = FALSE}
 source("scripts/associacao.R", encoding = 'UTF-8')
 source("scripts/tabela1.R", encoding = 'UTF-8')
+N <- nrow(DF_pos)
 ```
 
 Os 47 pacientes observados possuem idades entre 41 e 77 anos, IMC entre 20.8 e 44.8 kg/m2, e o tempo da cirurgia variando entre 1 hora e 15 minutos e 5 horas e 30 minutos.
@@ -100,16 +101,51 @@ Todas as outras informações estavam completos (N=47).
 ## Prevalência da disfagia e disfonia
 
 ```{r, include = F}
-round(prop.test(36, 47)$conf.int*100, 1) # DISFAGIA
-round(prop.test(11,47)$conf.int*100, 1) # DISFONIA
+N.disfon <- sum(DF_pos$POS_DISFONIA)
+N.disfag <- sum(DF_pos$POS_DISFAGIA)
+prev.disfon <- N.disfon/N
+prev.disfag <- N.disfag/N
+round(prop.test(prev.disfag, N)$conf.int*100, 1) # DISFAGIA
+round(prop.test(prev.disfon, N)$conf.int*100, 1) # DISFONIA
 ```
 
-A disfagia foi diagnosticada em 36 pacientes com taxa de prevalência estimada em 76.6% (IC 95%: [61.6%, 87.2%]) no período estudado.
-A disfonia foi diagnosticada em 11 pacientes, com taxa de prevalência estimada em 23.4% (IC 95%: [12.8%, 38.4%]) no período estudado.
+No total, N=`r N` pacientes retornaram para a avaliação de disfagia e disfonia no pós operatório tardio.
 
-Dentre os 47 pacientes, 11 (23.4%) tiveram diagnóstico negativo para ambas condições e 11 (23.4%) tiveram diagnóstico positivo para ambas condições.
-Houve 25 (53.2%) pacientes diagnosticados com disfagia, mas que não apresentaram disfonia.
-Nenhum paciente apresentou disfonia sem apresentar disfagia.
+A disfagia foi diagnosticada em
+`r N.disfag`
+pacientes com taxa de prevalência estimada em
+`r format.pct(prev.disfag)`
+(IC 95%:
+`r format.interval(prop.test(N.disfag, N)$conf.int*100, 1)`
+) no período estudado.
+A disfonia foi diagnosticada em
+`r N.disfon`
+pacientes, com taxa de prevalência estimada em
+`r format.pct(prev.disfon)`
+(IC 95%:
+`r format.interval(prop.test(N.disfon, N)$conf.int*100, 1)`
+) no período estudado.
+
+```{r frequencias CT}
+ct.pos.tardio <- with(DF_pos, table(POS_DISFONIA, POS_DISFAGIA))
+```
+
+Dentre os `r N`
+pacientes,
+`r ct.pos.tardio[1]`
+(`r format.pct(ct.pos.tardio[1]/N)`)
+tiveram diagnóstico negativo para ambas condições e
+`r ct.pos.tardio[4]`
+(`r format.pct(ct.pos.tardio[4]/N)`)
+tiveram diagnóstico positivo para ambas condições.
+Houve
+`r ct.pos.tardio[3]`
+(`r format.pct(ct.pos.tardio[3]/N)`)
+pacientes diagnosticados com disfagia, mas que não apresentaram disfonia.
+Os pacientes que apresentaram disfonia sem apresentar disfagia foram
+`r ct.pos.tardio[2]`
+(`r format.pct(ct.pos.tardio[2]/N)`).
+
 
 ## Disfagia
 
