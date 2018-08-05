@@ -90,7 +90,6 @@ Esta análise foi realizada utilizando-se o software `R` versão `r getRversion(
 
 ```{r associacao, echo = FALSE}
 source("scripts/associacao.R", encoding = 'UTF-8')
-source("scripts/tabela1.R", encoding = 'UTF-8')
 N <- nrow(DF_pos)
 ```
 
