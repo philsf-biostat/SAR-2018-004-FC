@@ -44,9 +44,9 @@ levels(DF$CORPECTOMIAS) <- c(0, 1, 1)
 
 pos_tardio <- read_excel("dataset/Tabela Dados SEGUNDA ETAPA PARA FELIPE.xlsx",
                          sheet = "Pos Tardio", skip = 1)
-pos_tardio <- data.table(pos_tardio[, c(3,5:6)])
+pos_tardio <- data.table(pos_tardio[, c(3,5,6,8)])
 pos_tardio$PRONTUÁRIO <- factor(pos_tardio$PRONTUÁRIO)
-names(pos_tardio) <- c("PRONTUÁRIO", "POS_DISFONIA", "POS_DISFAGIA")
+names(pos_tardio) <- c("PRONTUÁRIO", "POS_DISFONIA", "POS_DISFAGIA", "Dias")
 
 DF_pos <- pos_tardio[DF, , on = .(PRONTUÁRIO)]
 DF_pos <- DF_pos[!is.na(POS_DISFONIA) & !is.na(POS_DISFAGIA)]
